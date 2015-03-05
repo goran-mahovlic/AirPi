@@ -17,7 +17,7 @@ class Print(output.Output):
 	for i in dataPoints:
       		Data[i] = str(i["value"])
 	#	print i["name"] + ": " + str(i["value"]) + " " + i["symbol"]
-		printData[i]
+		print Data[i]
 		return True
     	params = urllib.urlencode({'field1': Data[0], 'field2': Data[1],'field3': Data[2],'field4': Data[3], 'field5': Data[4],'field6': Data[5],'field7': Data[6],'field8': Data[7],'key':'34WTPBE2DXIESA5E'})
     	headers = {"Content-type": "application/x-www-form-urlencoded","Accept":"text/plain"}
